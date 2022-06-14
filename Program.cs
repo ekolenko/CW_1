@@ -68,6 +68,12 @@ void PrintArray(string[] arrayIn)
 {
     int arrLength = arrayIn.Length;
 
+    if (arrLength == 0) 
+    {
+        Console.WriteLine("[]");
+        return;
+    }
+
     Console.Write("[" + arrayIn[0]);
 
     for (int i = 1; i < arrayIn.Length; i++)
